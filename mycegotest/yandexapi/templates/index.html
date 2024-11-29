@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>MYCEGO - ТЕСТОВОЕ ЗАДАНИЕ</title>
+</head>
+<body>
+    <h1>Взаимодействие с API Яндекс.Диска</h1>
+    <form method="GET">
+        <label for="public_key">Публичная ссылка:</label>
+        <input type="text" id="public_key" name="public_key" value="{{ public_key }}" required>
+        <label for="file_type">Фильтр:</label>
+        <select id="file_type" name="file_type">
+            <option value="all" {% if file_type == "all" %}selected{% endif %}>Все</option>
+            <option value="image" {% if file_type == "image" %}selected{% endif %}>Изображения</option>
+            <option value="application" {% if file_type == "application" %}selected{% endif %}>Документы</option>
+            <option value="video" {% if file_type == "video" %}selected{% endif %}>Видео</option>
+        </select>
+        <input type="hidden" name="path" value="{{ path }}">
+        <button type="submit">Загрузить список</button>
+    </form>
+
+    {% if path and parent_path %}
+        <a href="?public_key={{ public_key }}&path={{ parent_path }}&file_type=all">Назад</a>
+    {% endif %}
+
+    {% if files %}
+        <h2>Содержимое:</h2>
+        <form method="POST" action="{% url 'download_selected_files' %}">
+            {% csrf_token %}
+            <input type="hidden" name="public_key" value="{{ public_key }}">
+            <ul>
+                {% for file in files %}
+                    {% if file.type == "dir" %}
+                        <li>
+                            📂 <a href="?public_key={{ public_key }}&path={{ file.path }}&file_type=all">{{ file.name }}</a>
+                        </li>
+                    {% elif file.type == "file" %}
+                        <li>
+                            <input type="checkbox" name="file_paths" value="{{ file.path }}" class="file-checkbox">
+                            {{ file.name }} - {{ file.size|default:"N/A" }} байт
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <button type="submit" id="download-button" disabled>Скачать выбранные</button>
+        </form>
+    {% elif error %}
+        <p style="color: blue; text-align: center">{{ error }}</p>
+    {% endif %}
+
+    <script>
+        // Включение или отключение кнопки
+        function toggleDownloadButton() {
+            const checkboxes = document.querySelectorAll('.file-checkbox');
+            const downloadButton = document.getElementById('download-button');
+
+            // Проверка на наличие выбранного файла
+            const isAnyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+            // Включение или выключение кнопки
+            downloadButton.disabled = !isAnyChecked;
+        }
+
+        // Отслеживание состояния выбора
+        document.querySelectorAll('.file-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', toggleDownloadButton);
+        });
+
+        // Стартовое состояние
+        toggleDownloadButton();
+    </script>
+</body>
+</html>
