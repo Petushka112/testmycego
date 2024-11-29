@@ -1,0 +1,5 @@
+/mycegotest/.env
+/mycegotest/db.sqlite3
+/mycegotest/yandexapi.log
+/mycegotest/cache/
+/.venv/pyvenv.cfg

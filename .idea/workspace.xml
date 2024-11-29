@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3a84740-1f79-425c-b9ed-cd58be347789" name="Changes" comment="Needed Libs">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/testmycego.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/mycegotest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/mycegotest/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/mycegotest/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/mycegotest/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycegotest/yandexapi/tests.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Petushka112/testmycego.git",
+    "accountId": "f6cb1d6a-3a1f-4fdc-bfb0-4efd2f778b78"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2pVP3CuQVMEF5NMUs6qlhqfYXZu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.generate.executor": "Run",
+    "Python.settings.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Requirements"
+    ]
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3a84740-1f79-425c-b9ed-cd58be347789" name="Changes" comment="" />
+      <created>1732848067497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732848067497</updated>
+    </task>
+    <task id="LOCAL-00001" summary="generate secret_key">
+      <option name="closed" value="true" />
+      <created>1732863890834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732863890834</updated>
+    </task>
+    <task id="LOCAL-00002" summary="REST API Yandex.Disk">
+      <option name="closed" value="true" />
+      <created>1732863924870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732863924870</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Interface And some JS">
+      <option name="closed" value="true" />
+      <created>1732863959813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732863959813</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added YandexApi app">
+      <option name="closed" value="true" />
+      <created>1732863981868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732863981868</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Needed Libs">
+      <option name="closed" value="true" />
+      <created>1732863997834</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732863997834</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="generate secret_key" />
+    <MESSAGE value="REST API Yandex.Disk" />
+    <MESSAGE value="Interface And some JS" />
+    <MESSAGE value="Added YandexApi app" />
+    <MESSAGE value="Needed Libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Needed Libs" />
+  </component>
+</project>
